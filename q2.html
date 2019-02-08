@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pledge Labyrinth</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <img id="q_img" src="logo.png" alt="logo here" />
+            <h1 class="messages">Phi Gamma Nu Pledge Labyrinth</h1>
+        </div>
+        <div id="q_box">
+            <h1 class="question" id="q2-1">Not bad! Now this is a little more tricky.</h1>
+            <h1 class="question" id="q2-2">How many suites are there in Lien?</h1>
+            <h1 class="question" id="q2-3">Remember you can't use the Internet.</h1>
+        </div>
+        <div id="buttons">
+            <input type=text id="input">
+            <input type=submit id="submit" class="btn">
+        </div>
+        <script type="text/javascript">
+            var tries = 0;
+            document.getElementById("submit").addEventListener("click", function() {
+                tries = tries + 1;
+                var answer = document.getElementById("input").value;
+                console.log(answer);
+                if (answer == "87") {
+                    window.location.replace("q3.html");
+                }
+                else {
+                    if (tries == 3) {
+                        window.location.replace("fallback.html");
+                    }
+                    alert("Wrong answer. Please try again.");
+                }
+            })
+        </script>
+    </body>
+</html>

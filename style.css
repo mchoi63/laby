@@ -1,0 +1,59 @@
+.messages, .question {
+    font-family: 'Marcellus SC', serif;
+}
+
+body {
+    background-color: #C39953;
+    text-align: center;
+    padding: 5%;
+}
+
+#m_box, #q_box {
+    background-color: #D92121;
+    text-align: left;
+    padding: 2%;
+    margin: 1%;
+}
+
+#header {
+    border-color: black;
+    border-style: solid;
+    margin: 1%;
+}
+
+img {
+    width: 30%;
+}
+
+#q_img {
+    width: 15%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+
+.btn {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background: white;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid black;
+    margin-right: 2.6rem;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+}
+
+.btn:last-child {
+    margin: 0;
+}
+
+.btn:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+}
