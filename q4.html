@@ -25,7 +25,7 @@
                 tries = tries + 1;
                 var answer = document.getElementById("input").value;
                 console.log(answer);
-                if (answer.includes("our") && answer.includes("Constitution") && answer.includes("a")) {
+                if (answer.includes("our") || answer.includes("Constitution") || answer.includes("a")) {
                     window.location.replace("q5.html");
                 }
                 else {
