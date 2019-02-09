@@ -14,7 +14,7 @@
         <div id="q_box">
             <h1 class="question" id="q1-1">The first question is easy.</h1>
             <h1 class="question" id="q1-2">What are the three pillars of Phi Gamma Nu?</h1>
-            <h1 class="question" id="q1-3">Order doesn't matter, but capitalize the first characters of each word.</h1>
+            <h1 class="question" id="q1-3">Order doesn't matter.</h1>
         </div>
         <div id="buttons">
             <input type=text id="input">
@@ -26,7 +26,7 @@
                 tries = tries + 1;
                 var answer = document.getElementById("input").value;
                 console.log(answer);
-                if (answer.includes("Brotherhood") && answer.includes("Philanthropy") && answer.includes("Professionalism")) {
+                if (answer.toUpperCase().includes("BROTHERHOOD") && answer.toUpperCase().includes("PHILANTHROPY") && answer.toUpperCase().includes("PROFESSIONALISM")) {
                     window.location.replace("q2.html");
                 }
                 else {

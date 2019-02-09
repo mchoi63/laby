@@ -19,7 +19,6 @@
             <h1 class="question" id="q6-5">Eileen Cho (10)</h1>
             <h1 class="question" id="q6-6">Jonah Sugarman (12)</h1>
             <h1 class="question" id="q6-7">Daphne Liu (6)</h1>
-            <h1 class="question" id="q6-8">Answer in all capital letters.</h1>
         </div>
         <div id="buttons">
             <input type=text id="input">
@@ -31,7 +30,7 @@
                 tries = tries + 1;
                 var answer = document.getElementById("input").value;
                 console.log(answer);
-                if (answer == "WELCOME") {
+                if (answer.toUppercase() == "WELCOME") {
                     window.location.replace("q7.html");
                 }
                 else {
