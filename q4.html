@@ -12,9 +12,8 @@
             <h1 class="messages">Phi Gamma Nu Pledge Labyrinth</h1>
         </div>
         <div id="q_box">
-            <h1 class="question" id="q4-1">Well that was easy! Here's the next one.</h1>
-            <h1 class="question" id="q4-2">How many dorms are there on South 40?</h1>
-            <h1 class="question" id="q4-3">Remember you can't use the Internet.</h1>
+            <h1 class="question" id="q4-1">The easy one's are done.</h1>
+            <h1 class="question" id="q4-2">17-80?</h1>
         </div>
         <div id="buttons">
             <input type=text id="input">
@@ -26,8 +25,8 @@
                 tries = tries + 1;
                 var answer = document.getElementById("input").value;
                 console.log(answer);
-                if (answer == "23") {
-                    window.location.replace("q4.html");
+                if (answer.includes("our") && answer.includes("Constitution") && answer.includes("a")) {
+                    window.location.replace("q5.html");
                 }
                 else {
                     if (tries == 3) {

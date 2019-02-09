@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pledge Labyrinth</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <img id="q_img" src="logo.png" alt="logo here" />
+            <h1 class="messages">Phi Gamma Nu Pledge Labyrinth</h1>
+        </div>
+        <div id="q_box">
+            <h1 class="question" id="q5-1">Angela and Min can complete a job in 2 hours.</h1>
+            <h1 class="question" id="q5-2">Angela and Maddy can complete a job in 3 hours.</h1>
+            <h1 class="question" id="q5-3">Maddy and Min can complete a job in 3 hours.</h1>
+            <h1 class="question" id="q5-4">How long will the job takes if Angela, Min, and Maddy work together?</h1>
+        </div>
+        <div id="buttons">
+            <input type=text id="input"> hours
+            <input type=submit id="submit" class="btn">
+        </div>
+        <script type="text/javascript">
+            var tries = 0;
+            document.getElementById("submit").addEventListener("click", function() {
+                tries = tries + 1;
+                var answer = document.getElementById("input").value;
+                console.log(answer);
+                if (answer == "24/13") {
+                    window.location.replace("q6.html");
+                }
+                else {
+                    if (tries == 3) {
+                        window.location.replace("fallback.html");
+                    }
+                    alert("Wrong answer. Please try again.");
+                }
+            })
+        </script>
+    </body>
+</html>
