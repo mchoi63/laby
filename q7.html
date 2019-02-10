@@ -12,14 +12,15 @@
             <h1 class="messages">Phi Gamma Nu Pledge Labyrinth</h1>
         </div>
         <div id="q_box">
-            <h1 class="question" id="q7-1">Matthew Kim (7)</h1>
-            <h1 class="question" id="q7-2">Alex Soyke (9)</h1>
-            <h1 class="question" id="q7-3">Addison Liang (9)</h1>
-            <h1 class="question" id="q7-4">Caelan Miller (1)</h1>
-            <h1 class="question" id="q7-5">Eileen Cho (10)</h1>
-            <h1 class="question" id="q7-6">Jonah Sugarman (12)</h1>
-            <h1 class="question" id="q7-7">Daphne Liu (6)</h1>
-            <h1 class="question" id="q7-8">Answer in all capital letters.</h1>
+            <h1 class="question" id="q7-1">Who is the person disguised in the password?</h1>
+            <div style="text-align: center">
+                <h1 class="question" id="q7-2">E D S A D</h1>
+                <h1 class="question" id="q7-3">N R T D D</h1>
+                <h1 class="question" id="q7-4">D D A A C</h1>
+                <h1 class="question" id="q7-5">D L A S D</h1>
+                <h1 class="question" id="q7-6">D U S D E</h1>
+                <h1 class="question" id="q7-7">D</h1>
+            </div>
         </div>
         <div id="buttons">
             <input type=text id="input">
@@ -31,7 +32,7 @@
                 tries = tries + 1;
                 var answer = document.getElementById("input").value;
                 console.log(answer);
-                if (answer == "WELCOME") {
+                if (answer.toUpperCase() == "SANTA CLAUS") {
                     window.location.replace("q8.html");
                 }
                 else {
